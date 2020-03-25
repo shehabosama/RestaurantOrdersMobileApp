@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_home"
+        android:title="Home"
+        android:icon="@drawable/ic_home_72dp"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/action_book_table"
+        android:enabled="true"
+        android:icon="@drawable/ic_insert_invitation_black_24dp"
+        android:title="Book Table"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_get_book_table"
+        android:enabled="true"
+        android:icon="@drawable/ic_insert_invitation_black_24dp"
+        android:title="All Book Tables"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_get_user_book_table"
+        android:enabled="true"
+        android:icon="@drawable/ic_insert_invitation_black_24dp"
+        android:title="All Book Tables"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_add_menu_item"
+        android:enabled="true"
+        android:icon="@drawable/ic_add_circle_black_72dp"
+        android:iconTint="@color/whiteColor"
+        android:title="Add Menu Item"
+        app:showAsAction="ifRoom|withText"/>
+    <item
+        android:id="@+id/action_add_ads_item"
+        android:enabled="true"
+        android:icon="@drawable/ic_add_circle_black_72dp"
+        android:iconTint="@color/whiteColor"
+        android:title="Add Offers"
+        app:showAsAction="ifRoom|withText"/>
+    <item
+        android:id="@+id/action_menu_item"
+        android:enabled="true"
+        android:icon="@drawable/ic_menu_black_24dp"
+        android:iconTint="@color/whiteColor"
+        android:title="Menu"
+        app:showAsAction="ifRoom|withText"/>
+
+    <item android:id="@+id/action_profile"
+        android:title="Profile"
+        android:icon="@drawable/ic_account_circle_72dp"
+        app:showAsAction="ifRoom"
+        />
+    <item android:id="@+id/action_notification"
+        android:title="Order Notification"
+        android:icon="@drawable/ic_notifications"
+        app:showAsAction="ifRoom"
+        />
+    <item android:id="@+id/action_all_sales_done"
+        android:title="All sales"
+        android:icon="@drawable/ic_local_atm_black_24dp"
+        app:showAsAction="ifRoom"
+        />
+    <item android:id="@+id/action_control"
+        android:title="Control Panel"
+        android:icon="@drawable/ic_build_black_72dp"
+        app:showAsAction="ifRoom"
+
+        />
+    <item
+        android:id="@+id/action_settings"
+        android:title="Settings"
+        android:icon="@drawable/ic_settings_72dp"
+        app:showAsAction="ifRoom"
+        />
+    <item android:title="Other"
+        app:itemTextColor="@color/whiteColor"
+        >
+
+
+        <menu>
+            <item
+                android:title="About us"
+                android:icon="@drawable/ic_format_align_center_72dp"
+                android:id="@+id/action_about_us"
+
+                />
+
+            <item android:title="Logout"
+                android:icon="@drawable/logout"
+                android:id="@+id/action_logout"
+                />
+
+
+        </menu>
+
+    </item>
+</menu>

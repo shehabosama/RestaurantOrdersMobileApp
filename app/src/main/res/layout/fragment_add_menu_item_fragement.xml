@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ui.Fragments.AddMenuItemFragment.AddMenuItemFragment"
+    android:background="@drawable/main_background">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/padding_medium">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ic_image_black_24dp"
+            android:paddingVertical="10dp"
+            android:background="@drawable/button_style"
+            android:id="@+id/image_select"
+            android:scaleType="centerCrop"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_text_item_name"
+            android:hint="Order Name"
+            android:textColorHint="@color/whiteColor"
+            android:backgroundTint="@color/whiteColor"
+            android:textColor="@color/whiteColor"
+            android:textSize="15sp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_text_item_description"
+            android:hint="Order Description"
+            android:textColorHint="@color/whiteColor"
+            android:backgroundTint="@color/whiteColor"
+            android:textColor="@color/whiteColor"
+            android:textSize="15sp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_text_item_price"
+            android:hint="Order Price"
+            android:textColorHint="@color/whiteColor"
+            android:textColor="@color/whiteColor"
+            android:backgroundTint="@color/whiteColor"
+            android:textSize="15sp"
+           />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_style"
+            android:text="Upload"
+            android:textColor="@color/whiteColor"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:padding="5dp"
+            android:drawableTop="@drawable/ic_publish_black_72dp"
+            android:textStyle="bold"
+            android:id="@+id/btn_upload_item"/>
+    </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

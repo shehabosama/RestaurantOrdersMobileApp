@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ui.Fragments.NotificationFragment.NotificationFragment"
+    android:orientation="vertical"
+    android:background="@drawable/main_background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Price is :"
+        android:textColor="@color/whiteColor"
+        android:textStyle="bold"
+        android:id="@+id/total_price"
+        android:layout_marginVertical="5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total bill Price is :"
+        android:textColor="@color/whiteColor"
+        android:textStyle="bold"
+        android:id="@+id/bill_price"
+        android:layout_marginVertical="5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="difference bill Price and sales price is :"
+        android:textColor="@color/whiteColor"
+        android:textStyle="bold"
+        android:id="@+id/difference_price"
+        android:layout_marginVertical="5dp"/>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/srlList">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_department"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

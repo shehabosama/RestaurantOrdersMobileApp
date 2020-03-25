@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_marginVertical="20dp"
+   >
+
+    <TextView
+        android:id="@+id/textid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        tools:ignore="HardcodedText"
+        android:layout_marginLeft="10dp"
+       />
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="--"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        tools:ignore="HardcodedText"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:id="@+id/textname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        tools:ignore="HardcodedText"
+        android:layout_marginLeft="10dp"
+        />
+
+
+
+</LinearLayout>
