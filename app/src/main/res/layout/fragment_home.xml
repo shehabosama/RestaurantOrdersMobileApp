@@ -33,7 +33,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/whiteColor"
-                    android:text="Welcome"
+                    android:text="@string/welcome"
 
                     android:layout_marginTop="10dp"
                     android:textSize="60sp"
@@ -42,7 +42,7 @@
                 <Button
                     android:id="@+id/btn_order_now"
                     style="@style/loginButton"
-                    android:text="Order Now"
+                    android:text="@string/order_now"
                     android:textColor="@color/whiteColor"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="@dimen/loginViewsMargin"

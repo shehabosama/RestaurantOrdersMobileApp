@@ -10,7 +10,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Total Price is :"
+        android:text="@string/total_price_is"
         android:textColor="@color/whiteColor"
         android:textStyle="bold"
         android:id="@+id/total_price"
@@ -18,7 +18,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Total bill Price is :"
+        android:text="@string/total_bill_price_is"
         android:textColor="@color/whiteColor"
         android:textStyle="bold"
         android:id="@+id/bill_price"
@@ -26,7 +26,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="difference bill Price and sales price is :"
+        android:text="@string/difference_bill_price_and_sales_price_is"
         android:textColor="@color/whiteColor"
         android:textStyle="bold"
         android:id="@+id/difference_price"

@@ -71,7 +71,7 @@
                     <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Description : "
+                    android:text="@string/description"
                     android:textColor="#FFFFFF"
                     android:textStyle="bold"
                     android:textSize="12sp"
@@ -95,7 +95,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="price : "
+                        android:text="@string/price"
                         android:textColor="#FFFFFF"
                         android:textStyle="bold"
                         android:textSize="12sp"
@@ -117,7 +117,7 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Order Now"
+                    android:text="@string/order_now"
                     android:textColor="@color/whiteColor"
                     android:textStyle="bold"
                     android:layout_gravity="center_horizontal"

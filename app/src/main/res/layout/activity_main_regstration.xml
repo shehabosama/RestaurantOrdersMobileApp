@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:background="@drawable/button_style"
-        android:text="مسؤول"
+        android:text="@string/admin"
         android:textColor="@color/whiteColor"
         android:textStyle="bold" />
 
@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:background="@drawable/button_style"
-        android:text="مستخدم"
+        android:text="@string/user"
         android:textColor="@color/whiteColor"
         android:textStyle="bold" />
 
@@ -44,7 +44,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:background="@drawable/button_style"
-        android:text="تربيزه"
+        android:text="@string/table"
         android:textColor="@color/whiteColor"
         android:textStyle="bold" />
 </LinearLayout>

@@ -43,7 +43,7 @@
                                 android:textStyle="bold"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Name: "
+                                android:text="@string/name"
                                 android:textSize="13dp"
                                 android:textColor="#000"
                                 android:layout_marginBottom="5dp"
@@ -72,7 +72,7 @@
                                 android:textStyle="bold"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Description: "
+                                android:text="@string/Description"
                                 android:textSize="13dp"
                                 android:textColor="#000"
                                 android:layout_marginBottom="5dp"
@@ -102,7 +102,7 @@
                                 android:textStyle="bold"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Location: "
+                                android:text="@string/Location"
                                 android:textSize="13dp"
                                 android:textColor="#000"
                                 android:layout_marginBottom="5dp"
@@ -140,7 +140,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Price is : "
+                            android:text="@string/price_is"
                             android:layout_marginTop="5dp"
 
                             />
@@ -148,7 +148,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Status is : "
+                            android:text="@string/status_is"
                             android:layout_marginTop="5dp"
 
                             />
@@ -203,7 +203,7 @@
                     android:gravity="center_horizontal|center_vertical"
                     />
                 <TextView
-                    android:text="Delete item"
+                    android:text="@string/delete_item"
                     android:layout_width="130dp"
                     android:layout_height="30dp"
                     android:layout_gravity="center_horizontal"
@@ -228,7 +228,7 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_style"
                     android:layout_marginHorizontal="5dp"
-                    android:text="Accept Order"
+                    android:text="@string/accept_order"
                     android:id="@+id/accept_btn"
                     android:visibility="gone"
                     />
@@ -238,7 +238,7 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_style"
                     android:layout_marginHorizontal="5dp"
-                    android:text="Reject Order"
+                    android:text="@string/reject_order"
                     android:id="@+id/reject_btn"
                     android:visibility="gone"
                     />

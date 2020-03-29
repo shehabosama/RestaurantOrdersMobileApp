@@ -27,7 +27,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="10dp"
                 android:textStyle="bold"
-                android:text="Write the report now"
+                android:text="@string/write_the_report_now"
                 android:textSize="18sp"
                 android:textColor="#000"
                 />
@@ -52,7 +52,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="write what do you want"
+                android:hint="@string/write_what_do_you_want"
                 android:textStyle="bold"
                 android:layout_marginHorizontal="20dp"
                 android:id="@+id/editTextReportDescription"
@@ -60,7 +60,7 @@
             <Button
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
-                android:text="Done"
+                android:text="@string/done"
                 android:layout_marginVertical="5dp"
                 android:background="@drawable/button_style"
                 android:id="@+id/btn_sen_report"
