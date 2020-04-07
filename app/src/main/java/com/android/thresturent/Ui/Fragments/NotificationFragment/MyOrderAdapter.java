@@ -46,6 +46,7 @@ public class MyOrderAdapter extends RecyclerView.Adapter<MyOrderAdapter.MyOrderH
         holder.description_item.setText(myOrder.getItemDescription());
         holder.price_item.setText(myOrder.getPrice());
         holder.location_item.setText(myOrder.getLocation());
+        holder.count.setText(myOrder.getCount());
         if(myOrder.getConfirmation().equals("0")){
             holder.status_item.setText("Pending");
             holder.status_item.setBackgroundColor(Color.YELLOW);
@@ -91,7 +92,7 @@ public class MyOrderAdapter extends RecyclerView.Adapter<MyOrderAdapter.MyOrderH
 
     public class MyOrderHolder extends RecyclerView.ViewHolder {
 
-        TextView name_item,description_item,price_item,status_item,location_item,delelte_image,delete_ever;
+        TextView name_item,description_item,price_item,status_item,location_item,delelte_image,delete_ever,count;
         Button reject_btn,accept_btn;
 
 
@@ -107,6 +108,7 @@ public class MyOrderAdapter extends RecyclerView.Adapter<MyOrderAdapter.MyOrderH
             delelte_image = itemView.findViewById(R.id.delete_item);
             location_item = itemView.findViewById(R.id.location_item);
             delete_ever = itemView.findViewById(R.id.delete_item_ever);
+            count = itemView.findViewById(R.id.count_item);
             if(isAdmin){
                 reject_btn.setVisibility(View.VISIBLE);
                 accept_btn.setVisibility(View.VISIBLE);

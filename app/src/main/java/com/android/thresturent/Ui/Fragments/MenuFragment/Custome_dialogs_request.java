@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.android.thresturent.R;
 import com.android.thresturent.common.helper.AppPreferences;
@@ -17,12 +18,12 @@ public class Custome_dialogs_request {
 
     Button btnDelete;
     EditText editText;
-
+    TextView txtprice;
     Activity activity;
 
 
     PresenterManuItem presenter;
-    public void showDialog(final Activity activity , final PresenterManuItem presenter , final String itemId){
+    public void showDialog(final Activity activity , final PresenterManuItem presenter , final String itemId, final int count, final double price, final double lat, final double lang){
         this.presenter = presenter;
         this.activity = activity;
 
@@ -35,6 +36,8 @@ public class Custome_dialogs_request {
 
         btnDelete = dialog.findViewById(R.id.orderNow);
         editText  = dialog.findViewById(R.id.editTextLocation);
+        txtprice = dialog.findViewById(R.id.price);
+        txtprice.setText("total of order is : "+String.valueOf(price));
 
         btnDelete.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,7 +49,8 @@ public class Custome_dialogs_request {
                 }else {
                     presenter.performOrderRequest(itemId,
                             AppPreferences.getString(Constants.AppPreferences.USER_KEY,activity,""),
-                            AppPreferences.getString(Constants.AppPreferences.USER_TOKEN,activity,""),editText.getText().toString(),"1");
+                            AppPreferences.getString(Constants.AppPreferences.USER_TOKEN,activity,""),editText.getText().toString(),"1",String.valueOf(count),String.valueOf(price)
+                            ,String.valueOf(lat),String.valueOf(lang));
                     dialog.dismiss();
                 }
 

@@ -23,7 +23,7 @@ public interface MenuItemContract {
 
       void performGetAllMenuItem();
       void performDeleteMenuItem(String id,String itemImage);
-      void performOrderRequest(String id,String userId,String notificationToken,String location,String user_type);
+      void performOrderRequest(String id,String userId,String notificationToken,String location,String user_type,String count,String price,String lat,String lang);
       void performRateOrder(String id,String rate);
     }
 }

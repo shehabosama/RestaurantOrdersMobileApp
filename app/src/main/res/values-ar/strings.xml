@@ -79,4 +79,10 @@
     <string name="admin">مسئول</string>
     <string name="user">مستخدم</string>
     <string name="table">تربيزه</string>
+    <string name="block_user">حظر المستخدم</string>
+    <string name="make_him_admin">ادمن</string>
+    <string name="delete_him">حذف</string>
+    <string name="do_you_want_to_order_this_order_now">هل انت متاكد من انك تريد طلب هذا الاوردر</string>
+    <string name="total_of_order_is">اجمالي سعر الطلب</string>
+    <string name="count">العدد:</string>
 </resources>

@@ -27,7 +27,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="10dp"
                 android:textStyle="bold"
-                android:text="@string/are_you_sure_to_delete_this_order"
+                android:text="@string/do_you_want_to_order_this_order_now"
                 android:textSize="18sp"
                 android:textColor="#000"
                 />
@@ -49,7 +49,18 @@
             android:orientation="vertical"
             android:gravity="center_horizontal"
             >
+            <TextView
 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:text=""
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:id="@+id/price"
+                />
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

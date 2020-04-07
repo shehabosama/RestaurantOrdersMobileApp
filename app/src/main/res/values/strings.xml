@@ -82,4 +82,7 @@
     <string name="block_user">block User</string>
     <string name="make_him_admin">Make him admin</string>
     <string name="delete_him">delete him</string>
+    <string name="do_you_want_to_order_this_order_now">Do you Want to Order this Order Now</string>
+    <string name="total_of_order_is">Total of Order is</string>
+    <string name="count">count:</string>
 </resources>

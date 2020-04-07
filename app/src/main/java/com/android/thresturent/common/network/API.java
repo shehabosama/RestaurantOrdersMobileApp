@@ -69,7 +69,13 @@ public interface API {
 
     @FormUrlEncoded
     @POST("add-order-request.php")
-    Call<MainResponse> addOrderRequest(@Field("order_id") int order_id ,@Field("user_id") int user_id,@Field("notifiy_token") String notifiy_token,@Field("location")String location ,@Field("user_type")String user_type);
+    Call<MainResponse> addOrderRequest(@Field("order_id") int order_id ,
+                                       @Field("user_id") int user_id,
+                                       @Field("notifiy_token") String notifiy_token,
+                                       @Field("location")String location ,
+                                       @Field("user_type")String user_type,@Field("count")int count,
+                                       @Field("price") double price,
+                                       @Field("lat")String lat,@Field("lang")String lang);
     @FormUrlEncoded
     @POST("get-order-request.php")
     Call<MyOrderResponse> getOrderRequest(@Field("user_id") int user_id);

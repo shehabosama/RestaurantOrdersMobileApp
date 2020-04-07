@@ -1,11 +1,14 @@
 package com.android.thresturent.Ui.Fragments.GetAllOrderDeleted;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -46,6 +49,7 @@ public class MyOrderAdapter extends RecyclerView.Adapter<MyOrderAdapter.MyOrderH
         holder.description_item.setText(myOrder.getItemDescription());
         holder.price_item.setText(myOrder.getPrice());
         holder.location_item.setText(myOrder.getLocation());
+        holder.count.setText(myOrder.getCount());
         if(myOrder.getConfirmation().equals("0")){
             holder.status_item.setText("Pending");
             holder.status_item.setBackgroundColor(Color.YELLOW);
@@ -86,8 +90,9 @@ public class MyOrderAdapter extends RecyclerView.Adapter<MyOrderAdapter.MyOrderH
 
     public class MyOrderHolder extends RecyclerView.ViewHolder {
 
-        TextView name_item,description_item,price_item,status_item,location_item, delelte_image;
+        TextView name_item,description_item,price_item,status_item,location_item, delelte_image,count;
         Button reject_btn,accept_btn;
+        ImageView location;
 
 
 
@@ -101,6 +106,8 @@ public class MyOrderAdapter extends RecyclerView.Adapter<MyOrderAdapter.MyOrderH
             status_item = itemView.findViewById(R.id.status_item);
             delelte_image = itemView.findViewById(R.id.delete_item);
             location_item = itemView.findViewById(R.id.location_item);
+            count = itemView.findViewById(R.id.count_item);
+            location = itemView.findViewById(R.id.image_location);
             if(isAdmin){
                 reject_btn.setVisibility(View.VISIBLE);
                 accept_btn.setVisibility(View.VISIBLE);
@@ -131,6 +138,15 @@ public class MyOrderAdapter extends RecyclerView.Adapter<MyOrderAdapter.MyOrderH
                 public void onClick(View v) {
                     if(interAction !=null)
                         interAction.onClickDelete(myOrder);
+                }
+            });
+            location.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Uri uri = Uri.parse("google.navigation:q="+myOrder.getLat()+","+myOrder.getLang());
+                    Intent intent = new Intent(Intent.ACTION_VIEW,uri);
+                    intent.setPackage("com.google.android.apps.maps");
+                    context.startActivity(intent);
                 }
             });
 

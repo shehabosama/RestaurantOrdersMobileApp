@@ -36,6 +36,40 @@ public class MyOrder
     @Expose
     private String user_type;
 
+    @SerializedName("lat")
+    @Expose
+    private String lat;
+    @SerializedName("lang")
+    @Expose
+    private String lang;
+    @SerializedName("count")
+    @Expose
+    private String count;
+
+    public String getLat() {
+        return lat;
+    }
+
+    public void setLat(String lat) {
+        this.lat = lat;
+    }
+
+    public String getLang() {
+        return lang;
+    }
+
+    public void setLang(String lang) {
+        this.lang = lang;
+    }
+
+    public String getCount() {
+        return count;
+    }
+
+    public void setCount(String count) {
+        this.count = count;
+    }
+
     public String getUser_type() {
         return user_type;
     }

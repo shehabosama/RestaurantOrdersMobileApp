@@ -73,9 +73,9 @@ public class PresenterManuItem implements MenuItemContract.Presenter {
     }
 
     @Override
-    public void performOrderRequest(String id, String userId, String notificationToken,String location,String user_type) {
+    public void performOrderRequest(String id, String userId, String notificationToken,String location,String user_type,String count,String price,String lat,String lang) {
         view.showProgress();
-        WebService.getInstance(false).getApi().addOrderRequest(Integer.parseInt(id),Integer.parseInt(userId),notificationToken,location,user_type).enqueue(new Callback<MainResponse>() {
+        WebService.getInstance(false).getApi().addOrderRequest(Integer.parseInt(id),Integer.parseInt(userId),notificationToken,location,user_type,Integer.parseInt(count),Double.parseDouble(price),lat,lang).enqueue(new Callback<MainResponse>() {
             @Override
             public void onResponse(Call<MainResponse> call, Response<MainResponse> response) {
                 model.onFinished(response.body().message);
