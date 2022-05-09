@@ -14,6 +14,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import com.android.thresturent.R;
 import com.android.thresturent.common.model.UserList;
+
+import java.util.HashMap;
 import java.util.List;
 
 import static androidx.constraintlayout.widget.Constraints.TAG;
@@ -25,6 +27,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserHolder>{
     private AdapterOrdersInteractions adapterOrdersInteractions;
     private boolean check = false;
     private boolean check2 = false;
+    private HashMap<Integer, Boolean> btnState = new HashMap<Integer, Boolean>();
     public UserAdapter(Context context,List<UserList> userLists,AdapterOrdersInteractions adapterOrdersInteractions) {
         this.userLists = userLists;
         this.context = context;
@@ -39,19 +42,34 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserHolder>{
     }
 
     @Override
+    public void onViewRecycled(@NonNull UserHolder holder) {
+        holder.adminSwitch.setOnCheckedChangeListener(null);
+        super.onViewRecycled(holder);
+
+    }
+
+
+
+    @Override
     public void onBindViewHolder(@NonNull UserHolder holder, int position) {
+
+        holder.adminSwitch.setOnCheckedChangeListener (null);
         UserList userList = userLists.get(position);
         holder.setListener(userList);
         holder.userName.setText(userList.getUsername());
         holder.email.setText(userList.getEmail());
-        holder.adminSwitch.setOnCheckedChangeListener (null);
+
         if(userList.is_admin.equals("1")){
 
             holder.adminSwitch.setChecked(true);
 
+        }else{
+            holder.adminSwitch.setChecked(false);
         }
         if(userList.is_bloked == 1){
             holder.blockCheck.setChecked(true);
+        }else {
+            holder.blockCheck.setChecked(false);
         }
         holder.adminSwitch.setOnCheckedChangeListener (adminSwitchListener);
 

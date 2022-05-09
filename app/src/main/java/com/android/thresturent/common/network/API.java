@@ -61,8 +61,12 @@ public interface API {
     Call<MainResponse> addManuUserItem(@Header("Cookie") String sessionIdAndRz,
                                         @Part MultipartBody.Part file,
                                         @Part("items") RequestBody items,
-                                        @Part("isAny") RequestBody isAny,@Part("user") String user,@Part("item_name") String item_name,@Part("item_description") String item_description
-            ,@Part("item_image") String item_image,@Part("price") String price);
+                                        @Part("isAny") RequestBody isAny,
+                                        @Part("user") String user,
+                                        @Part("item_name") String item_name,
+                                        @Part("item_description") String item_description,
+                                        @Part("item_image") String item_image,
+                                        @Part("price") String price);
 
     @POST("get-all-menu-item.php")
     Call<List<MenuItem>> getAllMenuItem();
